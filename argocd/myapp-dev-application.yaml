@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: myapp-dev
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/Shin-SangHyeop/myapp-gitops.git
+    targetRevision: main
+    path: apps/myapp/overlays/dev
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: myapp-dev
+  svncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
