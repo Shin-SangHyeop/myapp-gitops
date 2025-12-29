@@ -9,4 +9,4 @@ resources:
 
 images:
   - name: ghcr.io/shin-sanghyeop/myapp
-    newTag: latest
+    newTag: 3d66b999d7e2c332a5bee34597d538fe605b104c
