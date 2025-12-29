@@ -8,6 +8,5 @@ resources:
   - ../../base
 
 images:
-  - name: IMAGE_PLACEHOLDER
-    newName: ghcr.io/ORG_OR_USER/myapp
+  - name: ghcr.io/shin-sanghyeop/myapp
     newTag: latest
