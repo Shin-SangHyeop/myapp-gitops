@@ -8,5 +8,11 @@ resources:
   - ../../base
 
 images:
+<<<<<<< HEAD:apps/myapp/overlays/dev/kustomization.yaml
   - name: ghcr.io/shin-sanghyeop/myapp
     newTag: latest
+=======
+  - name: IMAGE_PLACEHOLDER
+    newName: ghcr.io/ORG_OR_USER/myapp
+    newTag: 6191f79781268d3e9b0ba562094d5b917a74dc41
+>>>>>>> 4a49ec2037e9ae14456a824e0a12ab54b375cda8:apps/myapp/base/overlays/dev/kustomization.yaml
